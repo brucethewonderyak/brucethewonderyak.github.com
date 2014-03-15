@@ -5,14 +5,36 @@
 <title>Bruce The Wonder Yak Daydream</title>
 </head>
 <body>
-Hello World!
+
+<script type="text/javascript">
+//this function opens one and closes the other
+function showCloseLevel(idOpen, idClose) {
+    //Show idOpen
+    document.getElementById(idOpen).style.display = "";
+    //Close idClose
+    document.getElementById(idClose).style.display = "none";
+}
+</script>
+***Website still being worked on***
+<br>
+<br>
+Bruce The Wonder Yak
 <br>
 <img src="images/bruce_256.png">
+<br>
+<p>
+So, I took the Nyandroid code and modified it to feature Bruce The Wonder Yak.  Dear old Bruce was an easter egg in Final Cut Pro, right up until Final Cut Pro 7.  I figured Bruce would make an awesome Daydream.
+</p>
 <br>
 <a href="https://play.google.com/store/apps/details?id=com.alexbrofsky.nyandroid">
   <img alt="Get it on Google Play"
        src="images/en_generic_rgb_wo_45.png" />
 </a>
+<br>
+<br>
+<br>
+<a href="javascript:showCloseLevel('bruce_phone_large', 'bruce_phone_small')"><img src="images/bruce_phone.png" id="bruce_phone_small" width="180" height="320"/></a>
+<a href="javascript:showCloseLevel('bruce_phone_small', 'bruce_phone_large')"><img src="images/bruce_phone.png" id="bruce_phone_large" style="display:none" /></a>
 
 </body>
 </html>
